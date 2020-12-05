@@ -1,0 +1,22 @@
+{
+    "name": "monkeyfeiyu",
+    "private": true,
+    "description": "技术项目合集",
+    "repository": {
+        "url": "https://github.com/monkeyfeiyu/mkfe",
+        "type": "git"
+    },
+    "license": "MIT",
+    "scripts": {
+        "version:patch": "npx lerna version patch --conventional-commits",
+        "version:minor": "npx lerna version minor --conventional-commits",
+        "version:major": "npx lerna version major --conventional-commits",
+        "release": "npx lerna publish from-package"
+    },
+    "devDependencies": {
+        "lerna": "^3.22.1"
+    },
+    "workspaces": [
+        "packages/*"
+    ]
+}

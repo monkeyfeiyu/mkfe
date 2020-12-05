@@ -1,0 +1,27 @@
+{
+    "version": "independent",
+    "npmClient": "yarn",
+    "useWorkspaces": true,
+    "command": {
+        "bootstrap": {
+            "registry": ["https://registry.npmjs.org"]
+        },
+        "version": {
+            "allowBranch": ["master"],
+            "ignoreChanges": [
+                "**/{test,__tests__,docs,bin}/**",
+                "**/*.{LICENSE,md,yml,yaml}",
+                "**/{.gitignore,package-lock.json,yarn.lock}"
+            ],
+            "message": "chore(release): publish"
+        },
+        "publish": {
+            "message": "chore(release): publish"
+        }
+    },
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org"
+    },
+    "packages": ["packages/*"]
+}
