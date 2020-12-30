@@ -1,16 +1,16 @@
-import babel from "@rollup/plugin-babel";
-import json from "@rollup/plugin-json";
-import { terser } from "rollup-plugin-terser";
-import pkg from "./package.json";
+import babel from '@rollup/plugin-babel';
+import json from '@rollup/plugin-json';
+import { terser } from 'rollup-plugin-terser';
+import pkg from './package.json';
 
-const createComment = (data) => {
+const createComment = data => {
     return [
-        "/*!",
-        ...data.map((v) => {
-            return ["*", v].join(" ");
+        '/*!',
+        ...data.map(v => {
+            return ['*', v].join(' ');
         }),
-        "*/",
-    ].join("\n");
+        '*/'
+    ].join('\n');
 };
 
 const getBanner = () => {
@@ -18,25 +18,25 @@ const getBanner = () => {
     const data = [
         `${name} v${version}`,
         `(c) 2020-${new Date().getFullYear()} ${author}`,
-        `Released under the ${license} License.`,
+        `Released under the ${license} License.`
     ];
     return createComment(data);
 };
 
 export default {
-    input: "lib/index.js",
+    input: 'lib/index.js',
     output: {
-        file: "dist/index.js",
-        format: "cjs",
-        banner: getBanner(),
+        file: 'dist/index.js',
+        format: 'cjs',
+        banner: getBanner()
     },
     plugins: [
         terser(),
         json(),
         babel({
             babelrc: false,
-            presets: ["@babel/preset-env"],
-            plugins: ["@babel/plugin-proposal-class-properties"],
-        }),
-    ],
+            presets: ['@babel/preset-env'],
+            plugins: ['@babel/plugin-proposal-class-properties']
+        })
+    ]
 };
