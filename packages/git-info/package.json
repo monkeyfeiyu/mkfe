@@ -1,0 +1,25 @@
+{
+    "name": "git-info",
+    "version": "1.0.0",
+    "description": "获取.git信息",
+    "keywords": [
+        "git-info"
+    ],
+    "author": "monkeyfeiyu <136320943@qq.com>",
+    "license": "ISC",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/monkeyfeiyu/mkfe.git"
+    },
+    "bugs": {
+        "url": "https://github.com/monkeyfeiyu/mkfe/issues"
+    },
+    "homepage": "https://github.com/monkeyfeiyu/mkfe#readme",
+    "publishConfig": {
+        "access": "public"
+    },
+    "dependencies": {
+        "ini": "^1.3.5"
+    }
+}
