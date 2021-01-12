@@ -13,7 +13,7 @@
 const EslintConfig = require('@mkfe/config/eslint-vue');
 
 // react
-const EslintConfig = require('@mkfe/config/eslint-vue');
+const EslintConfig = require('@mkfe/config/eslint-react');
 
 module.exports = EslintConfig;
 ```
