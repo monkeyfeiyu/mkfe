@@ -1,5 +1,5 @@
 {
-    "name": "git-info",
+    "name": "@mkfe/git-info",
     "version": "1.0.1",
     "description": "获取.git信息",
     "keywords": [
