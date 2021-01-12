@@ -1,0 +1,28 @@
+{
+    "name": "@mkfe/js2html",
+    "version": "1.0.0",
+    "description": "通过js配置来生成Document字符串",
+    "keywords": [
+        "js2html",
+        "js",
+        "html"
+    ],
+    "author": "monkeyfeiyu <136320943@qq.com>",
+    "license": "ISC",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/monkeyfeiyu/mkfe.git"
+    },
+    "bugs": {
+        "url": "https://github.com/monkeyfeiyu/mkfe/issues"
+    },
+    "homepage": "https://github.com/monkeyfeiyu/mkfe#readme",
+    "publishConfig": {
+        "access": "public"
+    },
+    "devDependencies": {
+        "lodash": "~4.17.15",
+        "typescript": "^3.5.3"
+    }
+}
