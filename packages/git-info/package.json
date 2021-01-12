@@ -1,6 +1,6 @@
 {
     "name": "git-info",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "获取.git信息",
     "keywords": [
         "git-info"
