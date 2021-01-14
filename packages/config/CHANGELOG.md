@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/monkeyfeiyu/mkfe/compare/@mkfe/config@1.2.0...@mkfe/config@1.2.1) (2021-01-14)
+
+
+### Bug Fixes
+
+* eslint规则冲突 ([815e279](https://github.com/monkeyfeiyu/mkfe/commit/815e279073c5ff4100c1756ccdb474179e7b32d7))
+
+
+
+
+
 # [1.2.0](https://github.com/monkeyfeiyu/mkfe/compare/@mkfe/config@1.1.1...@mkfe/config@1.2.0) (2021-01-12)
 
 
