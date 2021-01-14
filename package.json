@@ -19,8 +19,8 @@
         "eslint:fix": "npm run lint -- --fix packages"
     },
     "devDependencies": {
-        "@mkfe/config": "^1.1.0",
-        "@mkfe/flow": "^1.1.1",
+        "@mkfe/config": "1.2.1",
+        "@mkfe/flow": "1.2.0",
         "lerna": "^3.22.1"
     },
     "workspaces": [
