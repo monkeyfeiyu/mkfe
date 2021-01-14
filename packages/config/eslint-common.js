@@ -43,7 +43,6 @@ const EslintConfig = {
         'no-return-await': [0], // return await
         'no-param-reassign': [2, { props: false }], // 不要改写函数参数
         'arrow-body-style': [0], // 函数返回值简写
-        'object-curly-newline': [2, { multiline: true }],
         // const let
         'prefer-const': [
             2,
