@@ -1,6 +1,6 @@
 module.exports = {
     extends: ['stylelint-config-standard', 'stylelint-config-prettier', 'stylelint-config-rational-order'],
-    plugins: ['stylelint-prettier'],
+    plugins: ['stylelint-prettier', 'stylelint-scss'],
     rules: {
         'max-nesting-depth': 10,
         'selector-pseudo-class-no-unknown': [true, { ignorePseudoClasses: ['/global/'] }],
