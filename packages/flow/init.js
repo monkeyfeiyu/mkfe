@@ -22,10 +22,10 @@ const commitizenPath = ['.', relative(gitInfo.projectPath, rootPath), 'node_modu
 merge(pkg, {
     scripts: {
         commit: 'npx git-cz',
-        prettier: 'npx prettier --write',
-        lint: 'npx eslint --ext .ts,.tsx,.js,.jsx,.vue -f html -o ESLintReport.html',
+        prettier: 'npx prettier --write **/src/**/*.{ts,tsx,js,jsx,vue,scss}',
+        lint: 'npx eslint --ext .ts,.tsx,.js,.jsx,.vue --fix -f html -o ESLintReport.html -- src',
         'lint:style':
-            'npx stylelint --config node_modules/@mkfe/config/stylelint.config.js --fix -o StyleLintReport.html --aei --custom-formatter node_modules/stylelint-formatters-html **/*.{css,less,scss,sass}'
+            'npx stylelint --config node_modules/@mkfe/config/stylelint.config.js --fix -o StyleLintReport.html --aei --custom-formatter node_modules/stylelint-formatters-html **/src/**/*.{css,less,scss,sass,vue}'
     },
     husky: {
         hooks: {
@@ -36,11 +36,8 @@ merge(pkg, {
     'lint-staged': {
         linters: {
             '*.{ts,tsx,js,jsx,vue,css,less,scss,sass,json,md}': ['prettier --write', 'git add'],
-            '*.{css,less,scss,sass}': [
-                'npx stylelint --config node_modules/@mkfe/config/stylelint.config.js --fix',
-                'git add'
-            ],
-            '*.{ts,tsx,js,jsx,vue}': ['eslint -f table', 'git add']
+            '*.{css,less,scss,sass,vue}': ['stylelint --fix **/src/**/*.{css,less,scss,sass,vue}', 'git add'],
+            '*.{ts,tsx,js,jsx,vue}': ['eslint -f table --fix', 'git add']
         },
         ignore: ['CHANGELOG.md']
     },
