@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/monkeyfeiyu/mkfe/compare/@mkfe/flow@1.2.0...@mkfe/flow@1.2.1) (2021-03-10)
+
+
+### Bug Fixes
+
+* script命令 ([e863806](https://github.com/monkeyfeiyu/mkfe/commit/e863806233bb30f1ea15b6ef8e580e9efe1b6c77))
+
+
+
+
+
 # [1.2.0](https://github.com/monkeyfeiyu/mkfe/compare/@mkfe/flow@1.1.2...@mkfe/flow@1.2.0) (2021-01-12)
 
 
